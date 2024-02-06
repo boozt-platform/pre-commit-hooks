@@ -1,4 +1,4 @@
-[<img src=".github/platform-logo.png" width="300"/>](https://github.com/boozt-platform/pre-commit-hooks)
+[<img src="./.github/platform-logo.png" width="300"/>](https://github.com/boozt-platform/pre-commit-hooks)
 
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/boozt-platform/pre-commit-hooks.svg?label=latest&sort=semver)](https://github.com/boozt-platform/pre-commit-hooks/releases)
 [![license](https://img.shields.io/badge/license-mit-brightgreen.svg)](https://opensource.org/licenses/mit)
