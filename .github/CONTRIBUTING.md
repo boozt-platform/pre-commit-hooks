@@ -21,7 +21,7 @@ To contribute to the project, fork the repository on GitHub and create a new bra
 
 ## Installing Pre-commit Hooks
 
-Before making changes, it's recommended to install the pre-commit hooks. These hooks ensure that your code meets certain standards and guidelines before committing it. 
+Before making changes, it's recommended to install the pre-commit hooks. These hooks ensure that your code meets certain standards and guidelines before committing it.
 
 If the repository ships with a `.pre-commit-config.yaml`, make sure the necessary hooks have been installed (e.g. `pre-commit install`).
 
@@ -33,9 +33,9 @@ Please follow [Readme Driven Development][rdd].
 
 ## Updating Tests
 
-Maintaining a robust test suite is essential for ensuring the reliability and stability of the project. 
+Maintaining a robust test suite is essential for ensuring the reliability and stability of the project.
 
-If you make changes to the code, please update any relevant tests to reflect those changes. This helps 
+If you make changes to the code, please update any relevant tests to reflect those changes. This helps
 prevent regressions and ensures that the project continues to function as expected (see [TDD][tdd]).
 
 The test folder (if provided) in repository will have documentation guideline how to run the tests.
