@@ -1,0 +1,20 @@
+# Custom pre-commit hooks by following the pre-commit documentation
+# https://pre-commit.com/#new-hooks
+
+# https://github.com/koalaman/shellcheck
+- id: shellcheck
+  name: ShellCheck
+  description: |
+    This hook runs shellcheck on all bash/sh scripts in the repository.
+    It's a static analysis tool for shell scripts.
+  entry: pre-commit-hooks/shell/shellcheck.sh
+  language: script
+  files: \.sh$
+  args: [--severity=warning]
+  exclude: |
+    (?x)^(
+      .terraform\/.*$|
+      .tf-plugin-cache-dir\/.*$|
+      .vendor\/.*$|
+      .git\/.*$
+    )$
