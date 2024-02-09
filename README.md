@@ -2,17 +2,28 @@
 
 [![GitHub Tag (latest SemVer)](https://img.shields.io/github/v/tag/boozt-platform/pre-commit-hooks.svg?label=latest&sort=semver)][releases]
 [![license](https://img.shields.io/badge/license-mit-brightgreen.svg)][license]
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
 # pre-commit-hooks
 
 A collection of pre-commit hooks for various development tools using the [pre-commit]([https://pre-commit.com/]) framework.
 
 - [Available Hooks](#available-hooks)
-  - [Terraform](#terraform)
+  - [Shell](#shell)
 - [About Boozt](#about-boozt)
 - [Reporting Issues](#reporting-issues)
 - [Contributing](#contributing)
 - [License](#license)
+
+## How to Use
+
+```yaml
+repos:
+  - repo: https://github.com/boozt-platform/pre-commit-hooks
+    rev: v1.1.0
+    hooks:
+      - id: shellcheck
+```
 
 ## Available Hooks
 
@@ -20,7 +31,7 @@ The following hooks are supported:
 
 ### Shell
 
- - [ShellCheck](https://github.com/koalaman/shellcheck) - a static analysis tool for shell scripts
+ - [ShellCheck](./pre-commit-hooks/shell/shellcheck.sh) - a static analysis tool for shell scripts
 
 ## About Boozt
 
@@ -54,8 +65,8 @@ This project is licensed under the MIT. Please see [LICENSE][license] for full d
 [releases]: https://github.com/boozt-platform/pre-commit-hooks/releases
 [issues]: https://github.com/boozt-platform/pre-commit-hooks/issues
 [pull-request]: https://github.com/boozt-platform/pre-commit-hooks/pulls
-[contributing]: ./.github/CONTRIBUTING.md
-[license]: ./.github/LICENSE
+[contributing]: ./CONTRIBUTING.md
+[license]: ./LICENSE
 [boozt]: https://www.boozt.com/
 [booztlet]: https://www.booztlet.com/
 [blog]: https://medium.com/boozt-tech
