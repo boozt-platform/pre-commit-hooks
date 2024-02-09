@@ -18,9 +18,9 @@ A collection of pre-commit hooks for various development tools using the [pre-co
 
 The following hooks are supported:
 
-### Terraform
+### Shell
 
-TODO: add commands to test Terraform and Terramate development process.
+ - [ShellCheck](https://github.com/koalaman/shellcheck) - a static analysis tool for shell scripts
 
 ## About Boozt
 
