@@ -10,15 +10,11 @@
   entry: pre-commit-hooks/shell/shellcheck.sh
   language: script
   files: \.sh$
-  pass_filenames: false
-  args:
-    - --severity=warning
+  args: [--severity=warning]
   exclude: |
     (?x)^(
-      .+\.git\/.*$|
-      .+\.terraform\/.*$|
-      .+\.tf-plugin-cache-dir\/.*$|
-      .+\.vendor\/.*$|
-      .+\.vscode\/.*$|
-      .+\.idea\/.*$|
+      .terraform\/.*$|
+      .tf-plugin-cache-dir\/.*$|
+      .vendor\/.*$|
+      .git\/.*$|
     )$

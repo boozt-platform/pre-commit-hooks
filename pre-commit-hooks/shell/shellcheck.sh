@@ -3,7 +3,7 @@
 # This hook runs shellcheck on all shell scripts in the repository.
 # https://github.com/koalaman/shellcheck
 
-readonly ARGS=("$@")
+set -euo pipefail
 
 # Check if shellcheck is installed
 if ! command -v shellcheck &> /dev/null; then
@@ -12,5 +12,8 @@ if ! command -v shellcheck &> /dev/null; then
   exit 1
 fi
 
+# The following is needed for local build tool (due to Docker interactivity)
+[ -f /dev/tty ] && exec /dev/tty
+
 # Run shellcheck with the given arguments
-shellcheck "${ARGS[@]}"
+shellcheck "${@}"
