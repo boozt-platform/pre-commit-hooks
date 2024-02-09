@@ -65,8 +65,8 @@ This project is licensed under the MIT. Please see [LICENSE][license] for full d
 [releases]: https://github.com/boozt-platform/pre-commit-hooks/releases
 [issues]: https://github.com/boozt-platform/pre-commit-hooks/issues
 [pull-request]: https://github.com/boozt-platform/pre-commit-hooks/pulls
-[contributing]: ./.github/CONTRIBUTING.md
-[license]: ./.github/LICENSE
+[contributing]: ./CONTRIBUTING.md
+[license]: ./LICENSE
 [boozt]: https://www.boozt.com/
 [booztlet]: https://www.booztlet.com/
 [blog]: https://medium.com/boozt-tech
