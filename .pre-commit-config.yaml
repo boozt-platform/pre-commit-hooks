@@ -10,12 +10,8 @@ repos:
       - id: check-added-large-files
       - id: check-merge-conflict
       - id: forbid-new-submodules
-      - id: no-commit-to-branch
-        args: [--branch, master]
       - id: detect-private-key
       - id: pretty-format-json
-      - id: sort-simple-yaml
-        files: ^.*\.ya?ml$
       - id: check-yaml
         args: [--allow-multiple-documents]
   - repo: https://github.com/google/yamlfmt
