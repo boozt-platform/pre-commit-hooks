@@ -28,3 +28,7 @@ repos:
       - id: conventional-pre-commit
         stages: [commit-msg]
         args: [--strict, build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test]
+  - repo: https://github.com/boozt-platform/pre-commit-hooks
+    rev: v1.1.0
+    hooks:
+      - id: shellcheck
